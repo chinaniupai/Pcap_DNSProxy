@@ -1,6 +1,6 @@
 # This code is part of Pcap_DNSProxy
 # Pcap_DNSProxy, a local DNS server based on WinPcap and LibPcap
-# Copyright (C) 2012-2017 Chengr28
+# Copyright (C) 2012-2019 Chengr28
 # 
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -18,11 +18,7 @@
 
 
 # CMake minimum version
-IF(PLATFORM_OPENWRT)
-	cmake_minimum_required(VERSION 2.8.12.2)
-ELSE(PLATFORM_OPENWRT)
-	cmake_minimum_required(VERSION 3.0.2)
-ENDIF(PLATFORM_OPENWRT)
+cmake_minimum_required(VERSION 3.1)
 
 # Sub directories
 add_subdirectory(Source/Pcap_DNSProxy)
